@@ -26,6 +26,34 @@ class Professor : public Person
            cin>>publication;
        }
        void putdata()
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+/*Enter your code hear */
+class Person
+{
+    protected:
+      int age;
+      string name;
+    public:
+          virtual void getdata(){};
+          virtual void putdata(){};
+};
+class Professor : public Person
+{
+    int publication;
+    static int id1;
+      public:
+       void getdata()
+       {
+           cin>>name;
+           cin>>age;
+           cin>>publication;
+       }
+       void putdata()
        {
           cout<<name<<" "<<age<<" "<<publication<<" "<<id1<<endl;
           id1++;
